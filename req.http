@@ -1,0 +1,93 @@
+### User Register
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+  "firstName": "rushikesh",
+  "lastName": "banda",
+  "email": "rushi.user@example.com",
+  "password": "User#12345",
+  "profileImageUrl": "https://example.com/avatars/users.png"
+}
+
+### User Login
+POST http://localhost:4000/user-api/authenticate
+Content-Type: application/json
+
+{
+  "email": "anurag.user@example.com",
+  "password": "User@12345",
+  "role":"USER"
+}
+
+### Author Register
+POST http://localhost:4000/author-api/users
+Content-Type: application/json
+
+{
+  "firstName": "rushikesh",
+  "lastName": "Author",
+  "email": "rushikeshbanda48@gmail.com",
+  "password": "Author@12345",
+  "profileImageUrl": "https://example.com/avatars/author.png"
+}
+
+### Author Register
+POST http://localhost:4000/author-api/users
+Content-Type: application/json
+
+{
+  "firstName": "test",
+  "lastName": "Author",
+  "email": "test.author@example.com",
+  "password": "testauthor",
+  "profileImageUrl": "https://example.com/avatars/author.png"
+}
+
+### Author Login
+POST http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+  "email": "vikas.author@example.com",
+  "password": "Author@12345",
+  "role": "AUTHOR"   
+}
+
+
+### Create article (AUTHOR)
+POST http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+  "author":"698a0d2124cbd2b7ab0cd799",
+  "title":"Token Test Article",
+  "category":"programming",
+  "content":"testing middleware flow"
+}
+
+### Read articles of a author
+GET http://localhost:4000/author-api/articles/698a0d2124cbd2b7ab0cd799
+
+### Update article (AUTHOR)
+POST http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+  "author":"698a0d2124cbd2b7ab0cd799",
+  "title":"Working Article",
+  "category":"programming",
+  "content":"Token verified successfully"
+}
+
+
+### Admin Block User
+POST http://localhost:4000/admin-api/block/698ac08cf8938bf30829302b
+
+### Admin Unblock User
+POST http://localhost:4000/admin-api/unblock/698ac08cf8938bf30829302b
+
+### Logout
+POST http://localhost:4000/logout
+
+
