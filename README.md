@@ -17,9 +17,9 @@ It provides secure authentication and authorization for managing blog articles a
 
 ---
 
-# 🚀 Features
+# Features
 
-## ✅ Authentication System
+## Authentication System
 
 * User Registration
 * User Login
@@ -28,7 +28,7 @@ It provides secure authentication and authorization for managing blog articles a
 
 ---
 
-## ✅ Role-Based Access Control
+## Role-Based Access Control
 
 Different access permissions for:
 
@@ -38,7 +38,7 @@ Different access permissions for:
 
 ---
 
-## ✅ Blog Article Management
+## Blog Article Management
 
 * Create Articles
 * Read Articles
@@ -47,7 +47,7 @@ Different access permissions for:
 
 ---
 
-## ✅ Middleware Security
+## Middleware Security
 
 * Verify JWT Tokens
 * Check Author Permissions
@@ -55,9 +55,9 @@ Different access permissions for:
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
-```bash id="o6ynj0"
+```bash
 Blog-App/
 │
 ├── APIs/
@@ -86,7 +86,7 @@ Blog-App/
 
 ---
 
-# 📘 Technologies Used
+# Technologies Used
 
 | Technology | Purpose                  |
 | ---------- | ------------------------ |
@@ -99,11 +99,11 @@ Blog-App/
 
 ---
 
-# 📌 Core Concepts Used
+# Core Concepts Used
 
 ---
 
-# 🔹 Node.js
+# Node.js
 
 ## Definition
 
@@ -117,7 +117,7 @@ Node.js is a JavaScript runtime used to execute JavaScript outside the browser.
 
 ---
 
-# 🔹 Express.js
+# Express.js
 
 ## Definition
 
@@ -125,14 +125,14 @@ Express.js is a Node.js framework used to build APIs and backend applications.
 
 ### Example
 
-```js id="gngy02"
+```js
 const express = require("express");
 const app = express();
 ```
 
 ---
 
-# 🔹 REST API
+# REST API
 
 ## Definition
 
@@ -149,7 +149,7 @@ REST API enables communication between frontend and backend using HTTP requests.
 
 ---
 
-# 🔹 MongoDB
+# MongoDB
 
 ## Definition
 
@@ -163,7 +163,7 @@ MongoDB is a NoSQL database that stores data in JSON-like format.
 
 ---
 
-# 🔹 JWT Authentication
+# JWT Authentication
 
 ## Definition
 
@@ -171,7 +171,7 @@ JWT (JSON Web Token) is used for secure authentication.
 
 ### Authentication Flow
 
-```text id="0es2sx"
+```text
 User Login
     ↓
 Server Verifies Credentials
@@ -185,11 +185,11 @@ Protected APIs Use Token
 
 ---
 
-# 📄 APIs Folder
+# APIs Folder
 
 ---
 
-# 📄 AdminApi.js
+# AdminApi.js
 
 ## Purpose
 
@@ -203,7 +203,7 @@ Handles admin-related operations.
 
 ---
 
-# 📄 AuthorApi.js
+# AuthorApi.js
 
 ## Purpose
 
@@ -217,7 +217,7 @@ Handles author operations.
 
 ---
 
-# 📄 UserApi.js
+# UserApi.js
 
 ## Purpose
 
@@ -231,7 +231,7 @@ Handles user-related operations.
 
 ---
 
-# 📄 CommonApi.js
+# CommonApi.js
 
 ## Purpose
 
@@ -244,11 +244,11 @@ Contains APIs accessible by all users.
 
 ---
 
-# 📄 Middlewares
+# Middlewares
 
 ---
 
-# 📄 VerifyToken.js
+# VerifyToken.js
 
 ## Purpose
 
@@ -262,13 +262,13 @@ Verifies JWT token before accessing protected APIs.
 
 ### Example
 
-```js id="p4n6jk"
+```js
 app.use(verifyToken);
 ```
 
 ---
 
-# 📄 CheckAuthor.js
+# CheckAuthor.js
 
 ## Purpose
 
@@ -281,11 +281,11 @@ Checks whether the logged-in user is the article author.
 
 ---
 
-# 📄 Models
+# Models
 
 ---
 
-# 📄 Articlemodel.js
+# Articlemodel.js
 
 ## Purpose
 
@@ -301,7 +301,7 @@ Defines schema for blog articles.
 
 ---
 
-# 📄 usermodel.js
+# usermodel.js
 
 ## Purpose
 
@@ -316,11 +316,11 @@ Defines schema for application users.
 
 ---
 
-# 📄 Services
+# Services
 
 ---
 
-# 📄 AuthenticationService.js
+# AuthenticationService.js
 
 ## Purpose
 
@@ -334,7 +334,7 @@ Handles authentication logic.
 
 ---
 
-# 🔹 Middleware
+# Middleware
 
 ## Definition
 
@@ -349,7 +349,7 @@ Middleware functions execute before API routes.
 
 ---
 
-# 🔹 Authorization
+# Authorization
 
 ## Definition
 
@@ -362,7 +362,7 @@ Authorization checks whether a user has permission to perform an action.
 
 ---
 
-# 🔹 CRUD Operations
+# CRUD Operations
 
 | Operation | Meaning      |
 | --------- | ------------ |
@@ -373,9 +373,9 @@ Authorization checks whether a user has permission to perform an action.
 
 ---
 
-# 📌 API Workflow
+# API Workflow
 
-```text id="qwe34p"
+```text
 Client Request
       ↓
 Express Server
@@ -391,7 +391,7 @@ Response Returned
 
 ---
 
-# 📌 Example API Endpoints
+# Example API Endpoints
 
 | Method | Endpoint        | Description      |
 | ------ | --------------- | ---------------- |
@@ -404,7 +404,7 @@ Response Returned
 
 ---
 
-# 📌 req.http File
+# req.http File
 
 ## Purpose
 
@@ -419,13 +419,13 @@ Used for API testing directly inside VS Code or REST Client extension.
 
 ---
 
-# ▶ How to Run the Project
+# How to Run the Project
 
 ---
 
 ## Step 1: Install Dependencies
 
-```bash id="ll36m3"
+```bash
 npm install
 ```
 
@@ -433,13 +433,13 @@ npm install
 
 ## Step 2: Start Server
 
-```bash id="0n0kho"
+```bash
 node server.js
 ```
 
 OR
 
-```bash id="e0b8o0"
+```bash
 nodemon server.js
 ```
 
@@ -455,7 +455,7 @@ Examples:
 
 ---
 
-# 📚 Learning Outcomes
+# Learning Outcomes
 
 After completing this project, the following concepts are understood:
 
@@ -470,7 +470,7 @@ After completing this project, the following concepts are understood:
 
 ---
 
-# 🛠 Tools Used
+# Tools Used
 
 * VS Code
 * Node.js
@@ -480,7 +480,7 @@ After completing this project, the following concepts are understood:
 
 ---
 
-# 📌 Real-World Use Cases
+# Real-World Use Cases
 
 | Feature        | Real-World Example    |
 | -------------- | --------------------- |
@@ -492,6 +492,6 @@ After completing this project, the following concepts are understood:
 
 ---
 
-# 📌 Conclusion
+# Conclusion
 
 This capstone project demonstrates a complete backend architecture for a Blog Application using Node.js, Express.js, MongoDB, and JWT authentication. It includes secure authentication, role-based authorization, middleware protection, and article management functionalities using a modular and scalable backend structure.
